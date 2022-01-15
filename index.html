@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Maa Transport Service | Book the best cabs now</title>
+  </head>
+  <body>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Navbar -->
+    <div class="w-100 text-center bg-white py-3 ">
+        <div class="container-fluid">
+            <div class="row mx-auto">
+                <div class="col-lg-3">
+                    <a href="#"><i class="fas fa-phone-alt"></i> +91 98411 02229</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#"><i class="fab fa-whatsapp"></i> +91 98411 02229</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#"><i class="fas fa-envelope"></i> bookingsmaatransport@gmail.com</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#"><i class="fas fa-map-marker"></i> MAA Transport Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Slot -->
+
+    <div class="w-100 d-flex flex-column main_slot ">
+      <button class="d-md-block text-white d-lg-none btn btn-brand py-3 fixed-bottom rounded-0 w-100 book-now">Book My Cab</button>
+      <div class="container-fluid flex-fill align-items-center mt-4 tabs ">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active rounded-pill bg-white text-black" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-taxi"></i> Local</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill bg-white text-black" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-plane-departure"></i> Airport Transfer</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill bg-white text-black" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-car"></i> Outstation</button>
+          </li>
+        </ul>
+        <div class="tab-content " id="pills-tabContent">
+          <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card mb-3 mx-auto " style="max-width: 700px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./images/taxi.jpg" class="img-fluid rounded-start h-100 w-100" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body m-2">
+                    <label for="" class="form-label">Starting from <i class="fas fa-map-marker"></i> Chennai</label>
+                    <br>
+                    <label> Select Package</label>
+                    <select class="form-select" required aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">2HRS 20KMS</option>
+                      <option value="2">3HRS 30KMS </option>
+                      <option value="3">4HRS 40KMS</option>
+                      <option value="4">5HRS 50KMS</option>
+                    </select>
+                    <label class="mt-2">Select Date and Time</label>
+                    <div class="md-form">
+                      <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                    </div>
+                    <div class="md-form mt-3">
+                      <input placeholder="Selected date" type="time" id="date-picker-example" class="form-control datepicker w-50">
+                    </div>
+                    <div class="form-check mt-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                          I accept the terms and conditions
+                      </label>
+                  </div> 
+                  <button type="button" class="btn btn-primary mt-3 rounded-pill"><i class="fas fa-car"></i> Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="card mb-3 mx-auto" style="max-width: 700px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/airport.jpg" class="img-fluid rounded-start h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body m-2">
+                          <label>Starting from <i class="fas fa-map-marker"></i> Chennai</label>
+                          <br>
+                          <label class="mt-2">Choose Type</label>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">Pickup</option>
+                              <option value="2">Drop</option>
+                          </select>
+                          <label class="mt-2">Pickup/Drop Location</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Abu</option>
+                            <option value="2">Agra</option>
+                            <option value="3">Adoni</option>
+                            <option value="4">Ahmadabad</option>
+                            <option value="5">Aligarh</option>
+                            <option value="6">Alwar</option>
+                          </select>
+                          <label class="mt-2">Select Date and Time</label>
+                          <div class="md-form">
+                              <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                          </div>
+                          <br>
+                          <div class="md-form">
+                              <input placeholder="Selected date" type="time" id="date-picker-example" class="form-control datepicker w-50">
+                          </div>
+                          <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I accept the terms and conditions
+                            </label>
+                        </div> 
+                        <button type="button" class="btn btn-primary mt-3 rounded-pill"><i class="fas fa-car"></i> Submit</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="card mb-3 mx-auto" style="max-width: 700px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/outstation.jpg" class="img-fluid rounded-start h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body m-2">
+                          <label>Starting from <i class="fas fa-map-marker"></i> Chennai</label>
+                          <br>
+                          <label class="mt-2">Location</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Abu</option>
+                            <option value="2">Agra</option>
+                            <option value="3">Adoni</option>
+                            <option value="4">Ahmadabad</option>
+                            <option value="5">Aligarh</option>
+                            <option value="6">Alwar</option>
+                          </select>
+                          <label class="mt-2">Select Start/Return  Date</label>
+                          <div class="md-form d-flex justify-content-between">
+                            <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                            <input placeholder="Selected date" type="date" id="date-picker-example" class="form-control datepicker">
+                          </div>
+                          <div class="md-form mt-2">
+                            <input placeholder="Selected date" type="time" id="date-picker-example" class="form-control datepicker w-50">
+                          </div>
+                          <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              I accept the terms and conditions
+                            </label>
+                        </div> 
+                        <button type="button" class="btn btn-primary mt-3 rounded-pill"><i class="fas fa-car"></i> Submit</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid flex-fill align-items-center p-4 bg-white">
+        <div class="row mx-4">
+          
+          <div class="col-lg-4">
+            <div class="box text-white p-4 rounded text-center d-flex">
+              <div class="text-white">
+                <i class="fas fa-plane-departure"></i> Airport transfer starts at ₹ 600/- 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box text-white p-4 rounded text-center d-flex">
+              <div class="text-white">
+                <i class="fas fa-rupee-sign"></i> Pay for what you use! 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+          <div class="box text-white p-4 rounded text-center d-flex">
+            <div class="text-white">
+              <i class="fas fa-hotel"></i> Stay (Hotels & Service apartments) starts at ₹ 1000/-
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABout Section -->
+
+    <div class="container-fluid flex-fill align-items-center p-4 bg-white">
+      <div class="mx-2 card shadow rounded-lg p-4 ">
+        <h4 class="txt">About Us</h4>
+        <p class="mt-4">Chennai Travel Solutions is the Part of MAA Transport Services a 10 Years old company who provide services to corporates and hotels for their travel needs like cab and transport services & Hotel Accommodations. MAA Transport Services is Started by a Group of professionals who have been working In Hotels and Corporate Travel Companies.</p>
+        <p class="mt-1">We represent our Client as Guest and treat them as such. <br>
+        Our Moto is the safety of the guest who Believe in us for their Travel Arrangements.</p>
+        <p class="mt-1">On Expansion of Business, we ventured into MAA Hotels & Service Apartments in the year of 2018.</p>
+        <p class="mt-1">In 2021 Further, we are taking our first step venturing into retail Business in the same line of Services. We would ensure to provide the same prioritised method of services for the Guest who avail our service for their travel need.</p>  
+
+        <b>Our Service</b>
+        <ul class="mt-2">
+          <li>Cab Arrangements for Airport Transfer, Local Use and Outstation.</li>
+          <li>Hotel Accommodation</li>
+          <li>Tour Arrangements</li>
+        </ul>
+        <p class="mt-1">We ensure to provide Quality Services for your travel needs.</p>
+
+        <b>Clientele / Portfolio:</b>
+        <ul class="mt-2">
+          <li>GAVS TECHNOLOGIES </li>
+          <li>CITADINES HOTEL</li>  
+          <li>CASAGRAND</li> 
+          <li>INDUS TOWERS</li>  
+          <li>HOLIDAYINN EXPRESS</li>  
+          <li>LATENT VIEW</li>
+        </ul>
+        <b class="mt-2">We take this opportunity to Thank all our Corporate Clients who supported us during the Covid year 2020-22.</b>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="w-100 d-flex flex-column">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="./images/logo.png" class="img-fluid p-5" alt="">
+          </div>
+          <div class="col-lg-3 d-flex align-items-center">
+            <p class="text">
+              Chennai Travel Solutions is the Part of MAA Transport Services a 10 Years old company who provide services to corporates and hotels for their travel needs like cab and transport services &amp; Hotel Accommodations.
+              <br>
+              <br>
+              MAA Transport Services is Started by a Group of professionals who have been working In Hotels and Corporate Travel Companies.
+            </p>
+          </div>
+          <div class="col-lg-3 d-flex flex-column flex-fill justify-content-center text-left">
+            <p class="text">Phone - +91 98411 02229 </p>
+            <p class="text">Whatsapp - +91 98411 02229 </p>
+            <p class="text">Email - bookingsmaatransport@gmail.com</p>
+            <p class="text">
+              Address - Door #17B, 36th Street,
+              <br>
+              Thillai Ganga Nagar, Nanaganallur,
+              <br>
+              Chennai-61
+            </p>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center">
+            <div class="list-group">
+              <a href="#" class="link-secondary">Home</a>
+              <a href="#" class="link-secondary">My Booking</a>
+              <a href="#" class="link-secondary">Contact</a>
+              <a href="#" class="link-secondary">Terms & Condition</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 pt-3 pb-5">
+      <div class="container">
+        <div class="row flex-wrap d-flex mx-auto text-center">
+          <p class="text mx-auto text-center">
+            Copyright © MAA Transport Services 2022 | Powered by 
+            <a href="#">Ice Cubes Technologies LLP</a> & 
+            <a href="#">Hepday Techies</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+       $('.datepicker').pickadate();
+    </script>
+  </body>
+</html>
+
